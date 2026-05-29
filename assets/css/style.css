@@ -315,6 +315,7 @@ footer { background: var(--noir); color: rgba(249,243,232,0.3); text-align: cent
 footer strong { display: block; color: rgba(249,243,232,0.65); font-family: "Playfair Display", serif; font-size: 1rem; margin-bottom: 0.5rem; }
 footer a { color: rgba(249,243,232,0.4); text-decoration: none; }
 footer a:hover { color: rgba(249,243,232,0.7); }
+.footer-entity { margin-top: 1.5rem; font-size: 0.7rem; opacity: 0.25; max-width: 640px; margin-left: auto; margin-right: auto; line-height: 1.6; }
 
 /* Sticky CTA mobile */
 .sticky-cta {

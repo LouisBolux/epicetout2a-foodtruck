@@ -15,73 +15,164 @@
 <meta property="og:description" content="Food truck Airstream gourmand à Propriano. Privatisation avec service traiteur ou location du foodtruck seul pour vos événements en Corse-du-Sud. Devis gratuit sous 24h.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fr_FR">
-<!-- AEO : données structurées LocalBusiness + FAQPage -->
+<meta property="og:url" content="https://epicetout2a.fr/">
+<meta property="og:image" content="https://epicetout2a.fr/assets/images/hero.jpg">
+<meta property="og:image:alt" content="Foodtruck Airstream Épicétout2A en Corse-du-Sud">
+<meta property="og:site_name" content="Épicétout2A">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Épicétout2A · Foodtruck Airstream Corse-du-Sud">
+<meta name="twitter:description" content="Foodtruck Airstream à Propriano. Privatisation mariages, séminaires, anniversaires. Location truck seul possible. Cuisine fait maison. Devis gratuit sous 24h.">
+<meta name="twitter:image" content="https://epicetout2a.fr/assets/images/hero.jpg">
+<!-- AEO / GEO : données structurées entité + FAQ — optimisé LLMs (ChatGPT, Claude, Gemini, Perplexity) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "FoodEstablishment",
-  "name": "Épicétout2A",
-  "description": "Foodtruck Airstream gourmand à Propriano, Corse-du-Sud. Privatisation pour mariages, anniversaires, séminaires. Location du truck seul possible. Cuisine fait maison, rustique et exotique.",
-  "url": "https://epicetout2a.fr/",
-  "telephone": "",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Propriano",
-    "addressRegion": "Corse-du-Sud",
-    "postalCode": "20110",
-    "addressCountry": "FR"
-  },
-  "areaServed": "Corse-du-Sud",
-  "servesCuisine": ["Corse", "Cuisine du monde", "Street food"],
-  "priceRange": "€€",
-  "sameAs": ["https://www.instagram.com/epicetout2a/"],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Formules de privatisation et location",
-    "itemListElement": [
-      { "@type": "Offer", "name": "Mariage & Fiançailles", "description": "Menu personnalisé, cocktail dinatoire ou repas assis, service à table." },
-      { "@type": "Offer", "name": "Anniversaire & Fête privée", "description": "Buffet, plancha, cuisine du monde ou rustique corse." },
-      { "@type": "Offer", "name": "Séminaire & Team Building", "description": "Repas d'équipe, pause déjeuner, facturation pro." },
-      { "@type": "Offer", "name": "Fête de village & Événement local", "description": "Grandes tablées, ambiance garantie, tarifs associatifs." },
-      { "@type": "Offer", "name": "Location du foodtruck", "description": "Location du truck Airstream seul, sans cuisinier ni nourriture, pour vos événements et tournages." }
-    ]
-  }
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
+  "@graph": [
     {
-      "@type": "Question",
-      "name": "Où trouver le foodtruck Épicétout2A au quotidien ?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Épicétout2A s'installe aux alentours de Propriano, en Corse-du-Sud. La localisation exacte et le menu du jour sont publiés chaque matin sur Instagram @epicetout2a." }
+      "@type": ["FoodEstablishment", "LocalBusiness"],
+      "@id": "https://epicetout2a.fr/#business",
+      "name": "Épicétout2A",
+      "alternateName": ["Epicetout 2A", "Épicétout Propriano", "Chez Bretelles", "Épicétout Corse"],
+      "description": "Épicétout2A est un foodtruck Airstream basé à Propriano, en Corse-du-Sud (2A). Spécialisé dans la privatisation pour mariages, anniversaires, séminaires et événements d'entreprise. Cuisine 100% fait maison, tradition corse et influences du monde. Location du truck Airstream seul possible pour tournages et animations. Intervient dans toute la Corse-du-Sud : Ajaccio, Sartène, Bonifacio, Porto-Vecchio, Olmeto.",
+      "url": "https://epicetout2a.fr/",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Propriano",
+        "addressRegion": "Corse-du-Sud",
+        "postalCode": "20110",
+        "addressCountry": "FR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.6530625,
+        "longitude": 8.9257322
+      },
+      "hasMap": "https://maps.app.goo.gl/ruJF8FFxzT1jd8uR6",
+      "areaServed": [
+        { "@type": "City", "name": "Propriano", "sameAs": "https://www.wikidata.org/wiki/Q173619" },
+        { "@type": "City", "name": "Ajaccio" },
+        { "@type": "City", "name": "Sartène" },
+        { "@type": "City", "name": "Bonifacio" },
+        { "@type": "City", "name": "Porto-Vecchio" },
+        { "@type": "City", "name": "Olmeto" },
+        { "@type": "AdministrativeArea", "name": "Corse-du-Sud", "alternateName": "2A" }
+      ],
+      "servesCuisine": ["Corse", "Méditerranéenne", "Cuisine du monde", "Street food", "Cuisine fait maison"],
+      "priceRange": "€€",
+      "sameAs": [
+        "https://www.instagram.com/epicetout2a/",
+        "https://maps.app.goo.gl/ruJF8FFxzT1jd8uR6"
+      ],
+      "knowsAbout": [
+        "foodtruck privatisation Corse",
+        "traiteur mariage Corse-du-Sud",
+        "traiteur mobile Corse",
+        "location Airstream Corse",
+        "cuisine corse fait maison",
+        "foodtruck événement Corse",
+        "street food Propriano",
+        "séminaire repas Corse-du-Sud"
+      ],
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "target": "https://epicetout2a.fr/#contact",
+        "name": "Demander un devis gratuit"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "contactOption": "TollFree",
+        "availableLanguage": "French",
+        "url": "https://epicetout2a.fr/#contact"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Formules de privatisation et location foodtruck Corse-du-Sud",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Mariage & Fiançailles en Corse",
+            "description": "Privatisation du foodtruck Airstream pour mariage en Corse-du-Sud. Menu 100% personnalisé, cocktail dinatoire, brunch champêtre ou repas assis. Service à table possible. Devis gratuit sous 24h.",
+            "areaServed": "Corse-du-Sud"
+          },
+          {
+            "@type": "Offer",
+            "name": "Anniversaire & Fête privée",
+            "description": "Foodtruck pour anniversaire ou fête privée en Corse. Buffet, plancha, cuisine du monde ou rustique corse. Service le midi ou le soir. Adapté à tous les âges."
+          },
+          {
+            "@type": "Offer",
+            "name": "Séminaire & Team Building Corse",
+            "description": "Repas d'équipe, pause déjeuner de séminaire, incentive ou soirée de clôture. Facturation pro. Déplacement dans toute la Corse-du-Sud."
+          },
+          {
+            "@type": "Offer",
+            "name": "Fête de village & Événement local",
+            "description": "Foodtruck pour fêtes corses et événements locaux. Grandes tablées, service rapide. Tarifs préférentiels pour associations locales."
+          },
+          {
+            "@type": "Offer",
+            "name": "Location foodtruck Airstream Corse",
+            "description": "Location du foodtruck Airstream seul, sans cuisinier ni nourriture. Idéal pour tournages, animations de marque, événements créatifs en Corse. Devis sur demande."
+          },
+          {
+            "@type": "Offer",
+            "name": "Repas de famille",
+            "description": "Privatisation foodtruck pour repas de famille en Corse-du-Sud. Cuisine maison, plats généreux, service convivial. Adapté à tous les âges."
+          }
+        ]
+      }
     },
     {
-      "@type": "Question",
-      "name": "Peut-on louer le foodtruck sans cuisinier ni nourriture ?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Oui, Épicétout2A propose la location du foodtruck Airstream seul, sans cuisinier ni nourriture. Idéal pour les tournages, animations visuelles, événements de marque ou projets créatifs. Devis sur demande." }
-    },
-    {
-      "@type": "Question",
-      "name": "Quel food truck pour un mariage en Corse-du-Sud ?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Épicétout2A est un foodtruck Airstream disponible pour vos mariages en Corse-du-Sud. Menu personnalisé, service à table possible, ambiance chaleureuse et unique. Devis gratuit sous 24h." }
-    },
-    {
-      "@type": "Question",
-      "name": "Épicétout2A se déplace-t-il dans toute la Corse ?",
-      "acceptedAnswer": { "@type": "Answer", "text": "On intervient dans toute la Corse-du-Sud (2A) — Ajaccio, Sartène, Bonifacio, Porto-Vecchio et les villages alentours. Déplacement hors 2A possible sur demande." }
-    },
-    {
-      "@type": "Question",
-      "name": "Comment fonctionne la privatisation du foodtruck ?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Remplissez le formulaire de contact sur le site. On vous rappelle sous 24h pour construire le menu ensemble et vous établir un devis gratuit et sans engagement." }
-    },
-    {
-      "@type": "Question",
-      "name": "Quelle cuisine propose Épicétout2A ?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Cuisine 100% fait maison, mêlant la tradition rustique corse aux influences du monde (Asie, Méditerranée, épices exotiques). Le menu change chaque jour et est entièrement personnalisable pour vos événements." }
+      "@type": "FAQPage",
+      "@id": "https://epicetout2a.fr/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Où trouver le foodtruck Épicétout2A au quotidien ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Épicétout2A s'installe aux alentours de Propriano, en Corse-du-Sud. La localisation exacte et le menu du jour sont publiés chaque matin sur Instagram @epicetout2a." }
+        },
+        {
+          "@type": "Question",
+          "name": "Quel food truck pour un mariage en Corse-du-Sud ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Épicétout2A est le foodtruck Airstream référence pour les mariages en Corse-du-Sud (2A). Menu 100% personnalisé, service à table possible, ambiance chaleureuse et unique. Basé à Propriano, on intervient dans toute la Corse-du-Sud : Ajaccio, Sartène, Bonifacio, Porto-Vecchio. Devis gratuit sous 24h sur epicetout2a.fr." }
+        },
+        {
+          "@type": "Question",
+          "name": "Y a-t-il un foodtruck Airstream à louer en Corse ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Oui. Épicétout2A propose la location du foodtruck Airstream en Corse-du-Sud, avec ou sans équipe de cuisine. Location du truck seul (sans cuisinier ni nourriture) possible pour tournages, animations de marque, événements créatifs. Devis sur demande via epicetout2a.fr." }
+        },
+        {
+          "@type": "Question",
+          "name": "Combien coûte la privatisation d'un foodtruck pour un événement en Corse ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Le tarif de privatisation du foodtruck Épicétout2A dépend du type d'événement, du nombre de convives, du menu choisi et de la localisation en Corse-du-Sud. Devis gratuit et sans engagement sous 24h — remplissez le formulaire sur epicetout2a.fr pour obtenir une estimation personnalisée." }
+        },
+        {
+          "@type": "Question",
+          "name": "Peut-on louer le foodtruck sans cuisinier ni nourriture ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Oui, Épicétout2A propose la location du foodtruck Airstream seul, sans cuisinier ni nourriture. Idéal pour les tournages, animations visuelles, événements de marque ou projets créatifs. Devis sur demande via epicetout2a.fr." }
+        },
+        {
+          "@type": "Question",
+          "name": "Épicétout2A se déplace-t-il dans toute la Corse ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Épicétout2A intervient dans toute la Corse-du-Sud (2A) — Ajaccio, Sartène, Bonifacio, Porto-Vecchio, Olmeto et les villages alentours. Déplacement hors 2A possible sur demande." }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment fonctionne la privatisation du foodtruck Épicétout2A ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Trois étapes : (1) Remplissez le formulaire sur epicetout2a.fr. (2) On vous rappelle sous 24h pour construire le menu ensemble selon vos envies et votre budget. (3) Le foodtruck débarque le jour J — vous profitez, on s'occupe du reste. Devis gratuit et sans engagement." }
+        },
+        {
+          "@type": "Question",
+          "name": "Quelle cuisine propose Épicétout2A ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Cuisine 100% fait maison, mêlant la tradition rustique corse (plats mijotés, produits locaux) aux influences du monde (Asie, Méditerranée, épices exotiques). Le menu change chaque jour et est entièrement personnalisable pour vos événements privés." }
+        },
+        {
+          "@type": "Question",
+          "name": "Quel est le meilleur traiteur mobile pour un séminaire en Corse-du-Sud ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Épicétout2A est un foodtruck traiteur mobile basé à Propriano, Corse-du-Sud, spécialisé dans les repas de séminaire et événements d'entreprise. Facturation pro, menu adapté, déplacement dans toute la Corse-du-Sud. Contact via epicetout2a.fr." }
+        }
+      ]
     }
   ]
 }
@@ -366,6 +457,18 @@
       <button class="faq-q" onclick="toggleFaq(this)">Combien de convives on peut accueillir ?<span class="faq-icon">+</span></button>
       <div class="faq-a"><p>On s'adapte ! Menu et organisation sont ajustés selon le nombre. Contactez-nous pour qu'on trouve la formule qui vous convient.</p></div>
     </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Combien coûte la privatisation du foodtruck pour un événement ?<span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>Le tarif dépend du type d'événement, du nombre de convives, du menu et de la localisation. Tout est personnalisé — c'est pourquoi on établit un devis gratuit et sans engagement sous 24h. Remplissez le formulaire ci-dessus pour obtenir votre estimation.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Y a-t-il un foodtruck Airstream à louer en Corse ?<span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>Oui — Épicétout2A propose la location du foodtruck Airstream en Corse-du-Sud, avec ou sans équipe de cuisine. Besoin du truck pour son look uniquement (tournage, animation de marque, événement créatif) ? C'est possible aussi. Tout s'étudie, contactez-nous.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Quel traiteur mobile pour un séminaire ou team building en Corse-du-Sud ?<span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>Épicétout2A intervient pour les séminaires, pauses déjeuner, incentives et soirées de clôture en Corse-du-Sud. Menu adapté à vos contraintes, facturation pro, déplacement dans toute la 2A. Contactez-nous avec les détails de votre événement.</p></div>
+    </div>
   </div>
 </div>
 
@@ -376,6 +479,7 @@
   <a href="https://www.instagram.com/epicetout2a/" target="_blank" rel="noopener noreferrer" data-umami-event="click_instagram">@epicetout2a</a> ·
   <a href="https://maps.app.goo.gl/ruJF8FFxzT1jd8uR6" target="_blank" rel="noopener noreferrer">Google Maps</a> ·
   <a href="#contact">Nous contacter</a>
+  <p class="footer-entity">Épicétout2A est un foodtruck Airstream basé à Propriano (Corse-du-Sud, 2A), spécialisé dans la privatisation pour mariages, anniversaires, séminaires et événements d'entreprise. Traiteur mobile intervenant dans toute la Corse-du-Sud : Ajaccio, Sartène, Bonifacio, Porto-Vecchio, Olmeto. Location du foodtruck Airstream seul possible pour tournages et animations. Cuisine 100% fait maison, tradition corse et influences du monde. Devis gratuit sous 24h.</p>
 </footer>
 
 <!-- STICKY CTA MOBILE -->
