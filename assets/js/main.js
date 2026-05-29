@@ -6,11 +6,6 @@ function closeNav() {
   document.querySelector('.nav-burger')?.classList.remove('open');
   document.getElementById('navMobile')?.classList.remove('open');
 }
-function toggleOffre(el) {
-  const wasOpen = el.classList.contains('open');
-  document.querySelectorAll('.offre-item').forEach(i => i.classList.remove('open'));
-  if (!wasOpen) el.classList.add('open');
-}
 function toggleFaq(btn) {
   const item = btn.parentElement;
   const wasOpen = item.classList.contains('open');
