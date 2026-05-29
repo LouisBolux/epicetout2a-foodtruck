@@ -104,7 +104,15 @@
   <a href="#quotidien">Le foodtruck</a>
   <a href="#privatisation">Privatisation</a>
   <a href="#contact">Devis</a>
+  <button class="nav-burger" aria-label="Menu" onclick="toggleNav(this)">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+<div class="nav-mobile-menu" id="navMobile">
+  <a href="#quotidien" onclick="closeNav()">Le foodtruck</a>
+  <a href="#privatisation" onclick="closeNav()">Privatisation</a>
+  <a href="#contact" onclick="closeNav()">Devis gratuit</a>
+</div>
 
 <!-- ═══════════════════════════════════════
      HERO
@@ -116,6 +124,7 @@
   <h1>Cuisine faite maison,<br><em>chaque jour</em></h1>
   <p class="tagline">Rustique & exotique, de village en village</p>
   <span class="geo">Propriano · Corse-du-Sud (2A)… ou sur demande !</span>
+  <a href="#contact" class="hero-cta">Demander un devis gratuit →</a>
   <div class="scroll-hint">découvrir</div>
 </div>
 
@@ -134,7 +143,7 @@
     </div>
     <div>
       <div style="border-radius:8px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,0.15);">
-        <img src="assets/images/foodtruck-photo.jpg" alt="Épicétout2A - Foodtruck en Corse-du-Sud" style="width:100%;display:block;aspect-ratio:1/1;object-fit:cover;" loading="lazy">
+        <img src="assets/images/foodtruck-photo.jpg" alt="Épicétout2A - Foodtruck en Corse-du-Sud" style="width:100%;display:block;aspect-ratio:1/1;object-fit:cover;object-position:center 80%;" loading="lazy">
       </div>
       <div style="margin-top:1.5rem;">
         <div class="insta-card">
