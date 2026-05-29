@@ -316,6 +316,9 @@ footer strong { display: block; color: rgba(249,243,232,0.65); font-family: "Pla
 footer a { color: rgba(249,243,232,0.4); text-decoration: none; }
 footer a:hover { color: rgba(249,243,232,0.7); }
 .footer-entity { margin-top: 1.5rem; font-size: 0.7rem; opacity: 0.25; max-width: 640px; margin-left: auto; margin-right: auto; line-height: 1.6; }
+.footer-subpages { margin-top: 1rem; font-size: 0.75rem; opacity: 0.35; }
+.footer-subpages a { color: rgba(249,243,232,0.5); text-decoration: none; }
+.footer-subpages a:hover { opacity: 1; }
 
 /* Sticky CTA mobile */
 .sticky-cta {
