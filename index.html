@@ -211,7 +211,7 @@
 <!-- Canonical à mettre à jour avec l'URL définitive une fois le domaine configuré -->
 <link rel="canonical" href="https://epicetout2a.fr/">
 <link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
-<link rel="preload" href="assets/images/hero.jpg" as="image" fetchpriority="high">
+<link rel="preload" href="assets/images/hero.webp" as="image" type="image/webp" fetchpriority="high">
 <link rel="preload" href="https://fonts.bunny.net/css?family=playfair-display:400i,700,700i,900,900i|source-sans-3:300,400,600|caveat:500,700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link href="https://fonts.bunny.net/css?family=playfair-display:400i,700,700i,900,900i|source-sans-3:300,400,600|caveat:500,700&display=swap" rel="stylesheet"></noscript>
 
@@ -241,7 +241,7 @@
 <!-- ═══════════════════════════════════════
      HERO
 ════════════════════════════════════════ -->
-<div class="hero-daily" id="hero" style="background-image:linear-gradient(to bottom,rgba(123,36,28,0.75) 0%,rgba(123,36,28,0.55) 40%,rgba(26,18,8,0.9) 100%),url('assets/images/hero.jpg');background-size:cover;background-position:center 40%;background-repeat:no-repeat;">
+<div class="hero-daily" id="hero" style="background-image:linear-gradient(to bottom,rgba(123,36,28,0.75) 0%,rgba(123,36,28,0.55) 40%,rgba(26,18,8,0.9) 100%),image-set(url('assets/images/hero.webp') type('image/webp'),url('assets/images/hero.jpg') type('image/jpeg'));background-size:cover;background-position:center 40%;background-repeat:no-repeat;">
   <div class="logo-wrap">
     <picture>
       <source srcset="assets/images/logo.webp" type="image/webp">
