@@ -112,14 +112,14 @@ nav a:hover { color: var(--creme); }
   color: rgba(249,243,232,0.8); margin-bottom: 0.5rem;
 }
 .hero-daily .bretelles {
-  font-family: "Caveat", cursive; font-size: clamp(1rem, 2.5vw, 1.3rem);
+  font-family: "Caveat", cursive; font-size: clamp(1.3rem, 3.2vw, 1.7rem);
   color: var(--or); letter-spacing: 0.08em; margin-bottom: 0.75rem; opacity: 0.9;
 }
 .hero-daily .geo {
   display: inline-flex; align-items: center; gap: 0.4rem;
   background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.15);
   border-radius: 20px; padding: 0.35rem 1rem;
-  font-size: 0.9rem; color: rgba(249,243,232,0.7); letter-spacing: 0.08em;
+  font-size: 1.05rem; color: rgba(249,243,232,0.7); letter-spacing: 0.08em;
   margin-bottom: 2.5rem;
 }
 .hero-daily .geo::before { content: "📍"; font-size: 0.85rem; }
