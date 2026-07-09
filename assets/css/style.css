@@ -26,6 +26,7 @@
   --bordeaux:     #5C1610;
 }
 html { scroll-behavior: smooth; }
+#quotidien, #retrouver, #privatisation, #contact, #faq { scroll-margin-top: 70px; }
 body { font-family: "Source Sans 3", sans-serif; background: var(--creme); color: var(--brun); font-size: 18px; line-height: 1.65; padding-bottom: 80px; }
 
 /* NAV */
@@ -132,6 +133,13 @@ nav a:hover { color: var(--creme); }
   transition: background 0.2s, transform 0.15s;
 }
 .hero-cta:hover { background: var(--or); transform: translateY(-2px); }
+
+.hero-cta-secondary {
+  display: block; color: rgba(249,243,232,0.75); text-decoration: underline;
+  text-underline-offset: 3px; font-size: 0.9rem; letter-spacing: 0.02em;
+  margin: -1.3rem 0 2rem; transition: color 0.2s;
+}
+.hero-cta-secondary:hover { color: var(--creme); }
 
 /* Scroll indicator */
 .scroll-hint {
