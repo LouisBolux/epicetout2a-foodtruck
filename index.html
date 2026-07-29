@@ -90,6 +90,30 @@
       ],
       "servesCuisine": ["Corse", "Méditerranéenne", "Cuisine du monde", "Street food", "Cuisine fait maison"],
       "priceRange": "€€",
+      "currenciesAccepted": "EUR",
+      "hasMenu": {
+        "@type": "Menu",
+        "name": "Menu du jour Épicétout2A",
+        "description": "Le menu change chaque jour et est publié le matin sur Instagram @epicetout2a. Fourchettes de prix indicatives pour le service quotidien à Propriano.",
+        "inLanguage": "fr",
+        "hasMenuSection": [
+          {
+            "@type": "MenuSection",
+            "name": "Entrées",
+            "offers": { "@type": "Offer", "priceSpecification": { "@type": "PriceSpecification", "minPrice": "4", "maxPrice": "6", "priceCurrency": "EUR" } }
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Plats",
+            "offers": { "@type": "Offer", "priceSpecification": { "@type": "PriceSpecification", "minPrice": "9", "maxPrice": "16", "priceCurrency": "EUR" } }
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Desserts",
+            "offers": { "@type": "Offer", "priceSpecification": { "@type": "PriceSpecification", "minPrice": "3", "maxPrice": "5", "priceCurrency": "EUR" } }
+          }
+        ]
+      },
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.8",
@@ -118,13 +142,22 @@
         "target": "https://epicetout2a.fr/#contact",
         "name": "Demander un devis gratuit"
       },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "customer service",
-        "contactOption": "TollFree",
-        "availableLanguage": "French",
-        "url": "https://epicetout2a.fr/#contact"
-      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "reservations",
+          "name": "Demande de devis et privatisation",
+          "availableLanguage": "French",
+          "url": "https://epicetout2a.fr/#contact"
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "name": "Messages directs Instagram",
+          "availableLanguage": "French",
+          "url": "https://www.instagram.com/epicetout2a/"
+        }
+      ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Formules de privatisation et location foodtruck Corse-du-Sud",
@@ -132,32 +165,38 @@
           {
             "@type": "Offer",
             "name": "Mariage & Fiançailles en Corse",
+            "url": "https://epicetout2a.fr/mariage-corse-du-sud.html",
             "description": "Privatisation du foodtruck Airstream pour mariage en Corse-du-Sud. Menu 100% personnalisé, cocktail dinatoire, brunch champêtre ou repas assis. Service à table possible. Devis gratuit sous 24h.",
             "areaServed": "Corse-du-Sud"
           },
           {
             "@type": "Offer",
             "name": "Anniversaire & Fête privée",
+            "url": "https://epicetout2a.fr/anniversaire-fete-privee-corse.html",
             "description": "Foodtruck pour anniversaire ou fête privée en Corse. Buffet, plancha, cuisine du monde ou rustique corse. Service le midi ou le soir. Adapté à tous les âges."
           },
           {
             "@type": "Offer",
             "name": "Séminaire & Team Building Corse",
+            "url": "https://epicetout2a.fr/seminaire-evenement-entreprise-corse.html",
             "description": "Repas d'équipe, pause déjeuner de séminaire, incentive ou soirée de clôture. Facturation pro. Déplacement dans toute la Corse-du-Sud."
           },
           {
             "@type": "Offer",
             "name": "Fête de village & Événement local",
+            "url": "https://epicetout2a.fr/anniversaire-fete-privee-corse.html",
             "description": "Foodtruck pour fêtes corses et événements locaux. Grandes tablées, service rapide. Tarifs préférentiels pour associations locales."
           },
           {
             "@type": "Offer",
             "name": "Location foodtruck Airstream Corse",
+            "url": "https://epicetout2a.fr/location-airstream-corse.html",
             "description": "Location du foodtruck Airstream seul, sans cuisinier ni nourriture. Idéal pour tournages, animations de marque, événements créatifs en Corse. Devis sur demande."
           },
           {
             "@type": "Offer",
             "name": "Repas de famille",
+            "url": "https://epicetout2a.fr/anniversaire-fete-privee-corse.html",
             "description": "Privatisation foodtruck pour repas de famille en Corse-du-Sud. Cuisine maison, plats généreux, service convivial. Adapté à tous les âges."
           }
         ]
@@ -206,6 +245,36 @@
           "@type": "Question",
           "name": "Quelle cuisine propose Épicétout2A ?",
           "acceptedAnswer": { "@type": "Answer", "text": "Cuisine 100% fait maison, mêlant la tradition rustique corse (plats mijotés, produits locaux) aux influences du monde (Asie, Méditerranée, épices exotiques). Le menu change chaque jour et est entièrement personnalisable pour vos événements privés." }
+        },
+        {
+          "@type": "Question",
+          "name": "Combien coûte un repas chez Épicétout2A ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Au service quotidien à Propriano, une entrée coûte entre 4 et 6 €, un plat entre 9 et 16 € et un dessert entre 3 et 5 €. Le menu changeant chaque jour, les prix varient légèrement à l'intérieur de ces fourchettes. Pour une privatisation du foodtruck lors d'un événement privé, le tarif fait l'objet d'un devis sur mesure, gratuit et sans engagement sous 24h." }
+        },
+        {
+          "@type": "Question",
+          "name": "Quels sont les horaires du foodtruck Épicétout2A ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Épicétout2A sert 6 jours sur 7 en général, le midi de 11h30 à 14h30 et le soir de 18h30 à 21h. Ces horaires sont indicatifs : le jour de fermeture varie d'une semaine à l'autre, le foodtruck peut être fermé deux jours, et l'emplacement change. La localisation et le menu du jour sont publiés chaque matin sur Instagram @epicetout2a, qui reste la seule source à jour." }
+        },
+        {
+          "@type": "Question",
+          "name": "Comment contacter Épicétout2A ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Pour un devis ou une privatisation, le formulaire sur epicetout2a.fr est le canal principal, avec un rappel sous 24h. Pour une question rapide, les messages directs Instagram @epicetout2a fonctionnent également. Épicétout2A ne communique pas de numéro de téléphone public." }
+        },
+        {
+          "@type": "Question",
+          "name": "Le foodtruck Épicétout2A peut-il venir à domicile ou dans un jardin privé ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Oui, à domicile comme sur une propriété privée en Corse-du-Sud. Le foodtruck est une remorque Airstream : l'installation exige qu'un véhicule tractant puisse accéder au terrain et y manœuvrer, et que le sol soit stable. Deux photos de l'accès et de l'emplacement envisagé suffisent généralement à valider la faisabilité avant réservation." }
+        },
+        {
+          "@type": "Question",
+          "name": "Combien de temps à l'avance faut-il réserver le foodtruck ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Il faut compter 2 à 3 mois en haute saison (juin à septembre), période où les week-ends partent vite en Corse-du-Sud, et davantage pour une date d'été dans l'extrême sud (Porto-Vecchio, Bonifacio). Hors saison, quelques semaines suffisent généralement." }
+        },
+        {
+          "@type": "Question",
+          "name": "Faut-il fournir l'eau et l'électricité au foodtruck ?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Le foodtruck Épicétout2A est autonome pour l'essentiel, mais un accès à l'eau et à l'électricité sur place simplifie le service, en particulier sur les événements longs. Le point est fait au moment du devis, en fonction du lieu exact." }
         },
         {
           "@type": "Question",
@@ -280,6 +349,18 @@
       <p>Chaque jour ou presque, le foodtruck s'installe aux alentours de Propriano. Au menu : des plats faits maison le matin même, entre tradition rustique corse et influences du monde — Asie, Méditerranée, épices d'ailleurs.</p>
       <p>Pas de cuisine industrielle. Juste ce qu'il y a de bon ce jour-là, cuisiné avec soin, servi avec le sourire.</p>
       <p>Pour savoir où on est et ce qu'on cuisine <strong>aujourd'hui</strong>, le plus simple c'est Instagram — on poste le menu et la localisation chaque matin.</p>
+
+      <div class="infos-pratiques">
+        <p class="infos-titre">Les prix, pour situer</p>
+        <ul class="infos-prix">
+          <li><span>Entrées</span><strong>4 à 6 €</strong></li>
+          <li><span>Plats</span><strong>9 à 16 €</strong></li>
+          <li><span>Desserts</span><strong>3 à 5 €</strong></li>
+        </ul>
+        <p class="infos-note">Le menu change tous les jours, donc les prix bougent un peu avec. Ces fourchettes concernent le service quotidien — pour un événement privé, c'est un <a href="/prix-foodtruck-privatisation-corse.html">devis sur mesure</a>.</p>
+        <p class="infos-titre">Les horaires, en gros</p>
+        <p class="infos-note">On sort <strong>6 jours sur 7</strong> — le midi de <strong>11h30 à 14h30</strong>, le soir de <strong>18h30 à 21h</strong>. Mais on est un foodtruck : le jour de repos bouge, il arrive qu'on ferme deux jours, et l'emplacement change. C'est Instagram qui fait foi chaque matin.</p>
+      </div>
     </div>
     <div>
       <div style="border-radius:8px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,0.15);">
@@ -408,28 +489,28 @@
           <div class="offre-header-left"><span class="offre-icon">💍</span><div><div class="offre-title">Mariage &amp; Fiançailles</div></div></div>
           <span class="offre-toggle">+</span>
         </div>
-        <div class="offre-body"><p>Cocktail dinatoire, brunch champêtre, repas assis sous les étoiles… On s'adapte à votre format, à vos convives et à l'ambiance que vous rêvez. Le foodtruck s'intègre à votre décor, vos couleurs, votre histoire. Menu 100 % fait maison, personnalisé avec vous lors d'un premier échange. Devis sur mesure, sans engagement.</p></div>
+        <div class="offre-body"><p>Cocktail dinatoire, brunch champêtre, repas assis sous les étoiles… On s'adapte à votre format, à vos convives et à l'ambiance que vous rêvez. Le foodtruck s'intègre à votre décor, vos couleurs, votre histoire. Menu 100 % fait maison, personnalisé avec vous lors d'un premier échange. Devis sur mesure, sans engagement. <a href="/mariage-corse-du-sud.html" style="color:var(--rouge);font-weight:600;white-space:nowrap;">En savoir plus →</a></p></div>
       </div>
       <div class="offre-item">
         <div class="offre-header">
           <div class="offre-header-left"><span class="offre-icon">🎉</span><div><div class="offre-title">Anniversaire &amp; Fête privée</div></div></div>
           <span class="offre-toggle">+</span>
         </div>
-        <div class="offre-body"><p>Formule conviviale et détendue : buffet, plancha, cuisine du monde ou rustique corse selon vos envies. Idéal pour créer une ambiance différente et mémorable. Service le midi ou le soir.</p></div>
+        <div class="offre-body"><p>Formule conviviale et détendue : buffet, plancha, cuisine du monde ou rustique corse selon vos envies. Idéal pour créer une ambiance différente et mémorable. Service le midi ou le soir. <a href="/anniversaire-fete-privee-corse.html" style="color:var(--rouge);font-weight:600;white-space:nowrap;">En savoir plus →</a></p></div>
       </div>
       <div class="offre-item">
         <div class="offre-header">
           <div class="offre-header-left"><span class="offre-icon">🏢</span><div><div class="offre-title">Séminaire &amp; Team Building</div></div></div>
           <span class="offre-toggle">+</span>
         </div>
-        <div class="offre-body"><p>Repas d'équipe, pause déjeuner de séminaire, incentive ou soirée de clôture. Facturation pro, menu adapté à vos contraintes. On se déplace partout en Corse-du-Sud.</p></div>
+        <div class="offre-body"><p>Repas d'équipe, pause déjeuner de séminaire, incentive ou soirée de clôture. Facturation pro, menu adapté à vos contraintes. On se déplace partout en Corse-du-Sud. <a href="/seminaire-evenement-entreprise-corse.html" style="color:var(--rouge);font-weight:600;white-space:nowrap;">En savoir plus →</a></p></div>
       </div>
       <div class="offre-item">
         <div class="offre-header">
           <div class="offre-header-left"><span class="offre-icon">🌿</span><div><div class="offre-title">Fête de village &amp; Événement local</div></div></div>
           <span class="offre-toggle">+</span>
         </div>
-        <div class="offre-body"><p>On connaît les fêtes corses, on les aime. Menu adapté aux grandes tablées, service rapide, ambiance garantie. Tarifs préférentiels pour les associations locales.</p></div>
+        <div class="offre-body"><p>On connaît les fêtes corses, on les aime. Menu adapté aux grandes tablées, service rapide, ambiance garantie. Tarifs préférentiels pour les associations locales. <a href="/anniversaire-fete-privee-corse.html" style="color:var(--rouge);font-weight:600;white-space:nowrap;">En savoir plus →</a></p></div>
       </div>
       <div class="offre-item">
         <div class="offre-header">
@@ -443,7 +524,7 @@
           <div class="offre-header-left"><span class="offre-icon">🚐</span><div><div class="offre-title">Location du foodtruck</div><div style="font-size:0.72rem;opacity:0.7;margin-top:2px;font-style:italic;">Sans cuisinier ni nourriture</div></div></div>
           <span class="offre-toggle">+</span>
         </div>
-        <div class="offre-body"><p>Vous avez un cuistot sous la main, un concept bien à vous, ou vous voulez juste le foodtruck pour son look ? On loue l'Airstream seul — sans équipe ni denrées. Idéal pour les tournages, les animations de marque, les événements créatifs ou les projets qui sortent des sentiers battus. Devis sur demande, tout s'étudie.</p></div>
+        <div class="offre-body"><p>Vous avez un cuistot sous la main, un concept bien à vous, ou vous voulez juste le foodtruck pour son look ? On loue l'Airstream seul — sans équipe ni denrées. Idéal pour les tournages, les animations de marque, les événements créatifs ou les projets qui sortent des sentiers battus. Devis sur demande, tout s'étudie. <a href="/location-airstream-corse.html" style="color:var(--rouge);font-weight:600;white-space:nowrap;">En savoir plus →</a></p></div>
       </div>
       <div class="offre-item offre-wildcard">
         <div class="offre-header">
@@ -455,6 +536,17 @@
     <div style="text-align:center;margin-top:3rem;">
       <a href="#contact" class="cta-offres">Parler de mon événement →</a>
     </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     ZONES D'INTERVENTION (maillage interne + SEO local)
+════════════════════════════════════════ -->
+<div class="page-links">
+  <p>En savoir plus</p>
+  <div>
+    <a href="/zones-intervention-corse-du-sud.html" class="l-rouge">Où on se déplace →</a>
+    <a href="/prix-foodtruck-privatisation-corse.html" class="l-terracotta">Nos prix →</a>
   </div>
 </div>
 
@@ -525,11 +617,35 @@
     </div>
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">Combien coûte la privatisation du foodtruck pour un événement ?<span class="faq-icon">+</span></button>
-      <div class="faq-a"><p>Le tarif dépend du type d'événement, du nombre de convives, du menu et de la localisation. Tout est personnalisé — c'est pourquoi on établit un devis gratuit et sans engagement sous 24h. Remplissez le formulaire ci-dessus pour obtenir votre estimation.</p></div>
+      <div class="faq-a"><p>Le tarif dépend du type d'événement, du nombre de convives, du menu et de la localisation. Tout est personnalisé — c'est pourquoi on établit un devis gratuit et sans engagement sous 24h. Remplissez le formulaire ci-dessus pour obtenir votre estimation, ou consultez le détail de <a href="/prix-foodtruck-privatisation-corse.html" style="color:var(--rouge);font-weight:600;">ce qui fait varier le prix</a>.</p></div>
     </div>
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">Y a-t-il un foodtruck Airstream à louer en Corse ?<span class="faq-icon">+</span></button>
       <div class="faq-a"><p>Oui — Épicétout2A propose la location du foodtruck Airstream en Corse-du-Sud, avec ou sans équipe de cuisine. Besoin du truck pour son look uniquement (tournage, animation de marque, événement créatif) ? C'est possible aussi. Tout s'étudie, contactez-nous.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Combien coûte un repas chez Épicétout2A ?<span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>Au quotidien, comptez <strong>4 à 6 €</strong> pour une entrée, <strong>9 à 16 €</strong> pour un plat et <strong>3 à 5 €</strong> pour un dessert. Le menu change chaque jour, donc les prix bougent un peu avec. Ces fourchettes valent pour le service quotidien à Propriano : une privatisation d'événement fait l'objet d'un <a href="/prix-foodtruck-privatisation-corse.html" style="color:var(--rouge);font-weight:600;">devis sur mesure</a>.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Quels sont les horaires du foodtruck ?<span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>On sort <strong>6 jours sur 7</strong>, le midi de <strong>11h30 à 14h30</strong> et le soir de <strong>18h30 à 21h</strong>. Mais on est un foodtruck : le jour de repos bouge d'une semaine à l'autre, il arrive qu'on ferme deux jours, et l'emplacement change. La seule info fiable pour aujourd'hui, c'est le post du matin sur <a href="https://www.instagram.com/epicetout2a/" target="_blank" rel="noopener noreferrer" style="color:var(--rouge);font-weight:600;">@epicetout2a</a>.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Comment vous joindre ?<span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>Pour un devis ou une privatisation, le formulaire ci-dessus est le plus rapide — on rappelle sous 24h. Pour une question courte, les messages directs Instagram sur <a href="https://www.instagram.com/epicetout2a/" target="_blank" rel="noopener noreferrer" style="color:var(--rouge);font-weight:600;">@epicetout2a</a> marchent très bien. On n'a pas de numéro de téléphone public.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Le foodtruck peut-il venir chez moi, dans un jardin ?<span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>Oui, à domicile comme sur une propriété. Le foodtruck est une remorque : il faut qu'un véhicule tractant puisse accéder au terrain et y manœuvrer, et que le sol tienne. Envoyez-nous deux photos de l'accès et de l'emplacement envisagé — on vous dit tout de suite si c'est jouable, plutôt que de le découvrir le jour J.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Combien de temps à l'avance faut-il réserver ?<span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>Comptez 2 à 3 mois en haute saison (juin–septembre), période où les week-ends partent vite en Corse-du-Sud — et davantage encore pour une date d'été dans l'extrême sud. Hors saison, quelques semaines suffisent généralement. Dans le doute, écrivez-nous : on vous dit franchement si la date est tenable.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">Faut-il fournir l'eau et l'électricité sur place ?<span class="faq-icon">+</span></button>
+      <div class="faq-a"><p>Le truck est autonome pour l'essentiel, mais un accès à l'eau et à l'électricité simplifie toujours le service, surtout sur les événements qui durent. On fait le point ensemble au moment du devis, selon le lieu exact.</p></div>
     </div>
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)">Quel traiteur mobile pour un séminaire ou team building en Corse-du-Sud ?<span class="faq-icon">+</span></button>
@@ -551,8 +667,11 @@
   <p class="footer-entity">Épicétout2A est un foodtruck Airstream basé à Propriano (Corse-du-Sud, 2A), spécialisé dans la privatisation pour mariages, anniversaires, séminaires et événements d'entreprise. Traiteur mobile intervenant dans toute la Corse-du-Sud : Ajaccio, Sartène, Bonifacio, Porto-Vecchio, Olmeto. Location du foodtruck Airstream seul possible pour tournages et animations. Cuisine 100% fait maison, tradition corse et influences du monde. Devis gratuit sous 24h.</p>
   <p class="footer-subpages">
     <a href="/mariage-corse-du-sud.html">Foodtruck mariage Corse</a> ·
+    <a href="/anniversaire-fete-privee-corse.html">Anniversaire &amp; fête privée</a> ·
     <a href="/seminaire-evenement-entreprise-corse.html">Séminaire &amp; entreprise</a> ·
-    <a href="/location-airstream-corse.html">Location Airstream</a>
+    <a href="/location-airstream-corse.html">Location du foodtruck</a> ·
+    <a href="/prix-foodtruck-privatisation-corse.html">Prix</a> ·
+    <a href="/zones-intervention-corse-du-sud.html">Où on se déplace</a>
   </p>
 </footer>
 
