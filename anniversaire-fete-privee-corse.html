@@ -6,8 +6,8 @@
 <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Foodtruck anniversaire &amp; fête privée en Corse-du-Sud — Épicétout2A</title>
-<meta name="description" content="Foodtruck Airstream pour anniversaire ou fête privée en Corse-du-Sud. Buffet, plancha, cuisine fait maison. Devis gratuit sous 24h.">
+<title>Foodtruck anniversaire, baptême &amp; fête privée en Corse-du-Sud — Épicétout2A</title>
+<meta name="description" content="Foodtruck pour anniversaire, baptême, communion, crémaillère ou départ à la retraite en Corse-du-Sud. Buffet, plancha, cuisine fait maison. Devis gratuit sous 24h.">
 <meta name="robots" content="index, follow">
 <meta property="og:title" content="Foodtruck anniversaire &amp; fête privée en Corse-du-Sud — Épicétout2A">
 <meta property="og:description" content="Buffet, plancha, cuisine du monde ou rustique corse. Service midi ou soir, partout en Corse-du-Sud.">
@@ -24,10 +24,10 @@
 {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Foodtruck pour anniversaire et fête privée en Corse-du-Sud",
+  "name": "Foodtruck pour anniversaire, baptême et fête privée en Corse-du-Sud",
   "provider": { "@id": "https://epicetout2a.fr/#business" },
   "areaServed": { "@type": "AdministrativeArea", "name": "Corse-du-Sud" },
-  "description": "Privatisation du foodtruck Airstream Épicétout2A pour anniversaires et fêtes privées en Corse-du-Sud. Buffet, plancha, cuisine du monde ou rustique corse. Service le midi ou le soir.",
+  "description": "Privatisation du foodtruck Épicétout2A pour anniversaires, baptêmes, communions, crémaillères, départs à la retraite et fêtes de village en Corse-du-Sud. Buffet, plancha, cuisine du monde ou rustique corse. Service le midi ou le soir.",
   "url": "https://epicetout2a.fr/anniversaire-fete-privee-corse.html",
   "offers": { "@type": "Offer", "priceCurrency": "EUR", "availability": "https://schema.org/InStock" }
 }
@@ -38,6 +38,7 @@
   "@type": "FAQPage",
   "mainEntity": [
     { "@type": "Question", "name": "Peut-on faire venir un foodtruck pour un anniversaire en Corse-du-Sud ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui. Épicétout2A privatise son foodtruck Airstream pour les anniversaires et fêtes privées partout en Corse-du-Sud. Formule conviviale : buffet, plancha, cuisine du monde ou rustique corse selon vos envies, en service du midi ou du soir." } },
+    { "@type": "Question", "name": "Pour quelles occasions peut-on privatiser le foodtruck ?", "acceptedAnswer": { "@type": "Answer", "text": "Épicétout2A intervient pour les anniversaires, baptêmes, communions, crémaillères, départs à la retraite, repas de famille et fêtes de village en Corse-du-Sud. Les associations locales bénéficient de tarifs préférentiels. Pour une occasion qui ne figure pas dans cette liste, il suffit de demander un devis." } },
     { "@type": "Question", "name": "Combien de convives le foodtruck peut-il servir ?", "acceptedAnswer": { "@type": "Answer", "text": "Épicétout2A s'adapte à toutes les tailles, d'une vingtaine de personnes à 200 convives : le menu et l'organisation sont ajustés en fonction du nombre." } },
     { "@type": "Question", "name": "Comment obtenir un devis pour une fête privée ?", "acceptedAnswer": { "@type": "Answer", "text": "Via le formulaire sur epicetout2a.fr : 4 champs, 2 minutes. Épicétout2A rappelle sous 24h pour construire le menu ensemble et établir un devis gratuit et sans engagement." } }
   ]
@@ -64,13 +65,29 @@
   <a href="/" class="brand" style="text-decoration:none;color:inherit;">Épicétout2A</a>
   <a href="/#quotidien">Le foodtruck</a>
   <a href="/#privatisation">Privatisation</a>
-  <a href="/#contact">Devis</a>
+  <a href="#devis">Devis</a>
+  <button class="nav-burger" aria-label="Menu" aria-expanded="false" onclick="toggleNav(this)">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+<div class="nav-mobile-menu" id="navMobile">
+  <span class="grp">Le foodtruck</span>
+  <a href="/#quotidien" onclick="closeNav()">Au quotidien</a>
+  <a href="/#retrouver" onclick="closeNav()">Nous trouver</a>
+  <a href="/prix-foodtruck-privatisation-corse.html">Nos prix</a>
+  <a href="/zones-intervention-corse-du-sud.html">Où on se déplace</a>
+  <span class="grp">Privatiser le foodtruck</span>
+  <a href="/mariage-corse-du-sud.html">Mariage</a>
+  <a href="/anniversaire-fete-privee-corse.html">Anniversaire &amp; fête privée</a>
+  <a href="/seminaire-evenement-entreprise-corse.html">Séminaire &amp; entreprise</a>
+  <a href="/location-airstream-corse.html">Location du foodtruck</a>
+  <a href="#devis" class="cta-drawer" onclick="closeNav()">Devis gratuit</a>
+</div>
 
 <div class="sub-hero">
   <h1>Foodtruck pour votre anniversaire<br>ou votre fête</h1>
   <p>Un foodtruck, une cuisine faite maison, et vous qui profitez de votre propre fête.</p>
-  <a href="/#contact" class="hero-cta">Demander un devis →</a>
+  <a href="#devis" class="hero-cta">Demander un devis →</a>
 </div>
 
 <div class="content-page">
@@ -78,7 +95,16 @@
 
   <h2>La formule</h2>
   <p>Conviviale et détendue : buffet, plancha, cuisine du monde ou rustique corse selon vos envies. Service le midi ou le soir. Cuisine 100&nbsp;% faite maison.</p>
-  <p>Anniversaire, fête de famille, fête de village — on s'adapte. Pour les associations locales, on fait des tarifs préférentiels.</p>
+  <h2>Pour quelles occasions</h2>
+  <ul>
+    <li>Anniversaire</li>
+    <li>Baptême, communion</li>
+    <li>Crémaillère</li>
+    <li>Départ à la retraite</li>
+    <li>Repas de famille</li>
+    <li>Fête de village — tarifs préférentiels pour les associations locales</li>
+  </ul>
+  <p>Et si votre occasion n'est pas dans la liste, demandez quand même.</p>
 
   <h2>Le menu</h2>
   <p>Pas de formule imposée. On part de vos envies, du nombre de convives et de votre budget, et on construit ensemble. De 20 à 200 personnes, on ajuste l'organisation.</p>
@@ -89,18 +115,46 @@
   <div class="cta-box">
     <h3>C'est quand, votre fête&nbsp;?</h3>
     <p>4 champs, 2 minutes. On revient vers vous sous 24h. Devis gratuit, sans engagement.</p>
-    <a href="/#contact">Demander mon devis →</a>
+    <a href="#devis">Demander mon devis →</a>
   </div>
 
   <h2>Questions fréquentes</h2>
   <dl class="faq-simple">
     <dt>Combien de convives&nbsp;?</dt>
     <dd>De 20 à 200. On ajuste le menu et l'organisation selon le nombre.</dd>
+    <dt>Pour quelles occasions&nbsp;?</dt>
+    <dd>Anniversaire, baptême, communion, crémaillère, départ à la retraite, repas de famille, fête de village. Et le reste, sur demande.</dd>
     <dt>Midi ou soir&nbsp;?</dt>
     <dd>Les deux.</dd>
     <dt>Combien ça coûte&nbsp;?</dt>
     <dd>Ça dépend de l'événement, du nombre de convives et du menu. <a href="/prix-foodtruck-privatisation-corse.html">Devis gratuit sous 24h</a>.</dd>
   </dl>
+</div>
+
+
+<div class="form-section" id="devis">
+  <p class="sec-label">Parlons-en</p>
+  <h2>Demandez votre devis</h2>
+  <div class="rule"></div>
+
+  <p>Parlez-nous de votre fête — date, lieu, nombre de convives. On revient vers vous sous 24h.</p>
+  <div class="gform-wrapper">
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSf5eveps2gGEFy8Tv-64gZN31ZPmy3rHvhoXDEOoudxI9ECpg/viewform?embedded=true"
+      width="100%"
+      height="1300"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0"
+      loading="lazy"
+      style="border-radius:12px;"
+      sandbox="allow-scripts allow-forms allow-same-origin allow-popups"
+      title="Formulaire de demande de devis Épicétout2A">
+      Chargement du formulaire…
+    </iframe>
+  </div>
+  <p class="form-note" style="margin-top:1.5rem;">On revient vers vous sous 24h · Devis gratuit et sans engagement</p>
+  <p class="form-rgpd">Les informations saisies sont utilisées uniquement pour répondre à votre demande de devis, stockées dans Google Forms. Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression.</p>
 </div>
 
 <div class="page-links">
@@ -118,8 +172,9 @@
   Foodtruck anniversaire et fête privée en Corse-du-Sud · Propriano · cuisine fait maison<br>
   <a href="/">Accueil</a> ·
   <a href="https://www.instagram.com/epicetout2a/" target="_blank" rel="noopener noreferrer">@epicetout2a</a> ·
-  <a href="/#contact">Nous contacter</a>
+  <a href="#devis">Nous contacter</a>
 </footer>
 
+<script src="assets/js/main.js"></script>
 </body>
 </html>

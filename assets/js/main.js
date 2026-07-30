@@ -1,9 +1,12 @@
 function toggleNav(btn) {
   btn.classList.toggle('open');
+  btn.setAttribute('aria-expanded', btn.classList.contains('open'));
   document.getElementById('navMobile').classList.toggle('open');
 }
 function closeNav() {
-  document.querySelector('.nav-burger')?.classList.remove('open');
+  const btn = document.querySelector('.nav-burger');
+  btn?.classList.remove('open');
+  btn?.setAttribute('aria-expanded', 'false');
   document.getElementById('navMobile')?.classList.remove('open');
 }
 function toggleFaq(btn) {

@@ -66,13 +66,29 @@
   <a href="/" class="brand" style="text-decoration:none;color:inherit;">Épicétout2A</a>
   <a href="/#quotidien">Le foodtruck</a>
   <a href="/#privatisation">Privatisation</a>
-  <a href="/#contact">Devis</a>
+  <a href="#devis">Devis</a>
+  <button class="nav-burger" aria-label="Menu" aria-expanded="false" onclick="toggleNav(this)">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+<div class="nav-mobile-menu" id="navMobile">
+  <span class="grp">Le foodtruck</span>
+  <a href="/#quotidien" onclick="closeNav()">Au quotidien</a>
+  <a href="/#retrouver" onclick="closeNav()">Nous trouver</a>
+  <a href="/prix-foodtruck-privatisation-corse.html">Nos prix</a>
+  <a href="/zones-intervention-corse-du-sud.html">Où on se déplace</a>
+  <span class="grp">Privatiser le foodtruck</span>
+  <a href="/mariage-corse-du-sud.html">Mariage</a>
+  <a href="/anniversaire-fete-privee-corse.html">Anniversaire &amp; fête privée</a>
+  <a href="/seminaire-evenement-entreprise-corse.html">Séminaire &amp; entreprise</a>
+  <a href="/location-airstream-corse.html">Location du foodtruck</a>
+  <a href="#devis" class="cta-drawer" onclick="closeNav()">Devis gratuit</a>
+</div>
 
 <div class="sub-hero">
   <h1>Foodtruck pour votre séminaire<br>en Corse-du-Sud</h1>
   <p>Un repas d'équipe qui sort du restaurant habituel. L'Airstream s'installe, la cuisine démarre, et le déjeuner devient un moment dont on se souvient.</p>
-  <a href="/#contact" class="hero-cta">Demander un devis pro →</a>
+  <a href="#devis" class="hero-cta">Demander un devis pro →</a>
 </div>
 
 <div class="content-page">
@@ -119,7 +135,7 @@
   <div class="cta-box">
     <h3>Demandez un devis pro</h3>
     <p>Indiquez-nous la date, le lieu, le nombre de participants et le format souhaité. On revient vers vous sous 24h avec un devis détaillé.</p>
-    <a href="/#contact">Demander un devis entreprise →</a>
+    <a href="#devis">Demander un devis entreprise →</a>
   </div>
 
   <h2>Questions fréquentes — Événements entreprise</h2>
@@ -133,6 +149,32 @@
     <dt>Peut-on réserver hors Corse-du-Sud ?</dt>
     <dd>Principalement en 2A. Hors département, possible sur demande selon la distance — contactez-nous pour en discuter.</dd>
   </dl>
+</div>
+
+
+<div class="form-section" id="devis">
+  <p class="sec-label">Parlons-en</p>
+  <h2>Demandez votre devis</h2>
+  <div class="rule"></div>
+
+  <p>Parlez-nous de votre événement — date, lieu, nombre de participants. On revient vers vous sous 24h.</p>
+  <div class="gform-wrapper">
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSf5eveps2gGEFy8Tv-64gZN31ZPmy3rHvhoXDEOoudxI9ECpg/viewform?embedded=true"
+      width="100%"
+      height="1300"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0"
+      loading="lazy"
+      style="border-radius:12px;"
+      sandbox="allow-scripts allow-forms allow-same-origin allow-popups"
+      title="Formulaire de demande de devis Épicétout2A">
+      Chargement du formulaire…
+    </iframe>
+  </div>
+  <p class="form-note" style="margin-top:1.5rem;">On revient vers vous sous 24h · Devis gratuit et sans engagement</p>
+  <p class="form-rgpd">Les informations saisies sont utilisées uniquement pour répondre à votre demande de devis, stockées dans Google Forms. Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression.</p>
 </div>
 
 <div class="page-links">
@@ -150,8 +192,9 @@
   Foodtruck traiteur séminaire &amp; entreprise en Corse-du-Sud · Propriano<br>
   <a href="/">Accueil</a> ·
   <a href="https://www.instagram.com/epicetout2a/" target="_blank" rel="noopener noreferrer">@epicetout2a</a> ·
-  <a href="/#contact">Nous contacter</a>
+  <a href="#devis">Nous contacter</a>
 </footer>
 
+<script src="assets/js/main.js"></script>
 </body>
 </html>
