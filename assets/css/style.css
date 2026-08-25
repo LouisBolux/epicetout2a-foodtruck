@@ -340,9 +340,8 @@ footer a:hover { color: rgba(249,243,232,0.7); }
 .footer-subpages { margin-top: 1rem; font-size: 0.75rem; opacity: 0.35; }
 .footer-subpages a { color: rgba(249,243,232,0.5); text-decoration: none; }
 .footer-subpages a:hover { opacity: 1; }
-.footer-capi { margin-top: 1.5rem; opacity: 0.6; }
+.footer-capi { margin-top: 1.5rem; }
 .footer-capi img { background: #fff; padding: 0.35rem 0.6rem; border-radius: 4px; }
-.footer-capi:hover { opacity: 1; }
 
 /* Sticky CTA mobile */
 .sticky-cta {
