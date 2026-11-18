@@ -1,0 +1,9 @@
+.vercel
+.DS_Store
+WhatsApp Image*.jpeg
+WhatsApp Image*.jpg
+epicetout_HD*.jpg
+
+# Notes et config locales (non publiées)
+CLAUDE.md
+.claude/
